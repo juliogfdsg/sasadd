@@ -1889,6 +1889,15 @@ header h1 {
 /* Responsividade - Mobile */
 @media (max-width: 768px) {
 
+  .container {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 10px;
+    text-align: center;
+    background-color: #ffffff;
+    /* box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); */
+}
+
   .containerrs {
     display: flex
 ;
