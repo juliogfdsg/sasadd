@@ -356,7 +356,7 @@
       
     /* Estilos básicos do botão */
 .button {
-    font-family: 'Sora', sans-serif;  
+    font-family: 'Sora', sans-serif;
     background: linear-gradient(135deg, #A5C972, #6A8E34);
     color: #fff;
     font-size: 18px;
@@ -368,6 +368,7 @@
     text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4); /* Sombra no texto */
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
     transition: all 0.3s ease-in-out;
+    margin: 30px;
 }
 
 /* Efeito de Hover (ao passar o mouse) */
