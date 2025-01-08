@@ -1887,6 +1887,16 @@ header h1 {
 
 /* Responsividade - Mobile */
 @media (max-width: 768px) {
+
+  .containerrs {
+    display: flex
+;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    position: relative;
+    padding: 20px;
+}
   .depoimentos-flex-wrapper-xy12 {
     
       flex-wrap: wrap; /* Permite que os depoimentos quebrem em linhas */
