@@ -1,539 +1,912 @@
+
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 <head>
+	<meta charset="UTF-8">
+		<title>Planner Equilibrio Produtivo &#8211; BessaWebdesigner</title>
+<meta name='robots' content='max-image-preview:large' />
+	<style>img:is([sizes="auto" i], [sizes^="auto," i]) { contain-intrinsic-size: 3000px 1500px }</style>
+	<link rel="alternate" type="application/rss+xml" title="Feed para BessaWebdesigner &raquo;" href="https://bessawebdesigner.com.br/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Feed de comentários para BessaWebdesigner &raquo;" href="https://bessawebdesigner.com.br/comments/feed/" />
+<script>
+window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/15.0.3\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/bessawebdesigner.com.br\/wp-includes\/js\/wp-emoji-release.min.js?ver=6.7.1"}};
+/*! This file is auto-generated */
+!function(i,n){var o,s,e;function c(e){try{var t={supportTests:e,timestamp:(new Date).valueOf()};sessionStorage.setItem(o,JSON.stringify(t))}catch(e){}}function p(e,t,n){e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(t,0,0);var t=new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data),r=(e.clearRect(0,0,e.canvas.width,e.canvas.height),e.fillText(n,0,0),new Uint32Array(e.getImageData(0,0,e.canvas.width,e.canvas.height).data));return t.every(function(e,t){return e===r[t]})}function u(e,t,n){switch(t){case"flag":return n(e,"\ud83c\udff3\ufe0f\u200d\u26a7\ufe0f","\ud83c\udff3\ufe0f\u200b\u26a7\ufe0f")?!1:!n(e,"\ud83c\uddfa\ud83c\uddf3","\ud83c\uddfa\u200b\ud83c\uddf3")&&!n(e,"\ud83c\udff4\udb40\udc67\udb40\udc62\udb40\udc65\udb40\udc6e\udb40\udc67\udb40\udc7f","\ud83c\udff4\u200b\udb40\udc67\u200b\udb40\udc62\u200b\udb40\udc65\u200b\udb40\udc6e\u200b\udb40\udc67\u200b\udb40\udc7f");case"emoji":return!n(e,"\ud83d\udc26\u200d\u2b1b","\ud83d\udc26\u200b\u2b1b")}return!1}function f(e,t,n){var r="undefined"!=typeof WorkerGlobalScope&&self instanceof WorkerGlobalScope?new OffscreenCanvas(300,150):i.createElement("canvas"),a=r.getContext("2d",{willReadFrequently:!0}),o=(a.textBaseline="top",a.font="600 32px Arial",{});return e.forEach(function(e){o[e]=t(a,e,n)}),o}function t(e){var t=i.createElement("script");t.src=e,t.defer=!0,i.head.appendChild(t)}"undefined"!=typeof Promise&&(o="wpEmojiSettingsSupports",s=["flag","emoji"],n.supports={everything:!0,everythingExceptFlag:!0},e=new Promise(function(e){i.addEventListener("DOMContentLoaded",e,{once:!0})}),new Promise(function(t){var n=function(){try{var e=JSON.parse(sessionStorage.getItem(o));if("object"==typeof e&&"number"==typeof e.timestamp&&(new Date).valueOf()<e.timestamp+604800&&"object"==typeof e.supportTests)return e.supportTests}catch(e){}return null}();if(!n){if("undefined"!=typeof Worker&&"undefined"!=typeof OffscreenCanvas&&"undefined"!=typeof URL&&URL.createObjectURL&&"undefined"!=typeof Blob)try{var e="postMessage("+f.toString()+"("+[JSON.stringify(s),u.toString(),p.toString()].join(",")+"));",r=new Blob([e],{type:"text/javascript"}),a=new Worker(URL.createObjectURL(r),{name:"wpTestEmojiSupports"});return void(a.onmessage=function(e){c(n=e.data),a.terminate(),t(n)})}catch(e){}c(n=f(s,u,p))}t(n)}).then(function(e){for(var t in e)n.supports[t]=e[t],n.supports.everything=n.supports.everything&&n.supports[t],"flag"!==t&&(n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&n.supports[t]);n.supports.everythingExceptFlag=n.supports.everythingExceptFlag&&!n.supports.flag,n.DOMReady=!1,n.readyCallback=function(){n.DOMReady=!0}}).then(function(){return e}).then(function(){var e;n.supports.everything||(n.readyCallback(),(e=n.source||{}).concatemoji?t(e.concatemoji):e.wpemoji&&e.twemoji&&(t(e.twemoji),t(e.wpemoji)))}))}((window,document),window._wpemojiSettings);
+</script>
+<style id='wp-emoji-styles-inline-css'>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta property="og:type" content="website"/>
-  <meta property="og:title" content="Planner Equilíbrio Produtivo"/>
-  <meta property="og:description" content="Tenha um ponto de equilíbrio na sua vida - Planner Equilíbrio Produtivo"/>
-  <meta property="og:image" content="https://plannerequilibrioprodutivo.com.br/favicon.png"/>
-  <meta property="og:image:type" content="image/png">
-  <meta property="og:image:width" content="1200">
-  <meta property="og:image:height" content="720">
-  <meta property="og:locale" content="pt_BR">
-  <meta property="og:url" content="https://plannerequilibrioprodutivo.com.br/">
-  <title>Equilíbrio Produtivo</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="https://plannerequilibrioprodutivo.com.br/favicon.png">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@100..800&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:root { --wp--style--global--content-size: 800px;--wp--style--global--wide-size: 1200px; }:where(body) { margin: 0; }.wp-site-blocks > .alignleft { float: left; margin-right: 2em; }.wp-site-blocks > .alignright { float: right; margin-left: 2em; }.wp-site-blocks > .aligncenter { justify-content: center; margin-left: auto; margin-right: auto; }:where(.wp-site-blocks) > * { margin-block-start: 24px; margin-block-end: 0; }:where(.wp-site-blocks) > :first-child { margin-block-start: 0; }:where(.wp-site-blocks) > :last-child { margin-block-end: 0; }:root { --wp--style--block-gap: 24px; }:root :where(.is-layout-flow) > :first-child{margin-block-start: 0;}:root :where(.is-layout-flow) > :last-child{margin-block-end: 0;}:root :where(.is-layout-flow) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-constrained) > :first-child{margin-block-start: 0;}:root :where(.is-layout-constrained) > :last-child{margin-block-end: 0;}:root :where(.is-layout-constrained) > *{margin-block-start: 24px;margin-block-end: 0;}:root :where(.is-layout-flex){gap: 24px;}:root :where(.is-layout-grid){gap: 24px;}.is-layout-flow > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-flow > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-flow > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignleft{float: left;margin-inline-start: 0;margin-inline-end: 2em;}.is-layout-constrained > .alignright{float: right;margin-inline-start: 2em;margin-inline-end: 0;}.is-layout-constrained > .aligncenter{margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > :where(:not(.alignleft):not(.alignright):not(.alignfull)){max-width: var(--wp--style--global--content-size);margin-left: auto !important;margin-right: auto !important;}.is-layout-constrained > .alignwide{max-width: var(--wp--style--global--wide-size);}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}body{padding-top: 0px;padding-right: 0px;padding-bottom: 0px;padding-left: 0px;}a:where(:not(.wp-element-button)){text-decoration: underline;}:root :where(.wp-element-button, .wp-block-button__link){background-color: #32373c;border-width: 0;color: #fff;font-family: inherit;font-size: inherit;line-height: inherit;padding: calc(0.667em + 2px) calc(1.333em + 2px);text-decoration: none;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link rel='stylesheet' id='htbbootstrap-css' href='https://bessawebdesigner.com.br/wp-content/plugins/ht-mega-for-elementor/assets/css/htbbootstrap.css?ver=2.7.8' media='all' />
+<link rel='stylesheet' id='font-awesome-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/font-awesome.min.css?ver=4.7.0' media='all' />
+<link rel='stylesheet' id='htmega-animation-css' href='https://bessawebdesigner.com.br/wp-content/plugins/ht-mega-for-elementor/assets/css/animation.css?ver=2.7.8' media='all' />
+<link rel='stylesheet' id='htmega-keyframes-css' href='https://bessawebdesigner.com.br/wp-content/plugins/ht-mega-for-elementor/assets/css/htmega-keyframes.css?ver=2.7.8' media='all' />
+<link rel='stylesheet' id='htmega-global-style-min-css' href='https://bessawebdesigner.com.br/wp-content/plugins/ht-mega-for-elementor/assets/css/htmega-global-style.min.css?ver=2.7.8' media='all' />
+<link rel='stylesheet' id='hello-elementor-css' href='https://bessawebdesigner.com.br/wp-content/themes/hello-elementor/style.min.css?ver=3.2.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://bessawebdesigner.com.br/wp-content/themes/hello-elementor/theme.min.css?ver=3.2.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://bessawebdesigner.com.br/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.2.1' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://bessawebdesigner.com.br/wp-content/uploads/elementor/css/custom-frontend.min.css?ver=1737378370' media='all' />
+<link rel='stylesheet' id='elementor-post-6-css' href='https://bessawebdesigner.com.br/wp-content/uploads/elementor/css/post-6.css?ver=1737378370' media='all' />
+<link rel='stylesheet' id='e-popup-style-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor-pro/assets/css/conditionals/popup.min.css?ver=3.25.3' media='all' />
+<link rel='stylesheet' id='font-awesome-5-all-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/all.min.css?ver=3.26.4' media='all' />
+<link rel='stylesheet' id='font-awesome-4-shim-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/css/v4-shims.min.css?ver=3.26.4' media='all' />
+<link rel='stylesheet' id='widget-heading-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/css/widget-heading.min.css?ver=3.26.4' media='all' />
+<link rel='stylesheet' id='e-animation-fadeIn-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/lib/animations/styles/fadeIn.min.css?ver=3.26.4' media='all' />
+<link rel='stylesheet' id='widget-image-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/css/widget-image.min.css?ver=3.26.4' media='all' />
+<link rel='stylesheet' id='e-animation-fadeInUp-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/lib/animations/styles/fadeInUp.min.css?ver=3.26.4' media='all' />
+<link rel='stylesheet' id='swiper-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=8.4.5' media='all' />
+<link rel='stylesheet' id='e-swiper-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.26.4' media='all' />
+<link rel='stylesheet' id='widget-image-carousel-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/css/widget-image-carousel.min.css?ver=3.26.4' media='all' />
+<link rel='stylesheet' id='widget-image-box-css' href='https://bessawebdesigner.com.br/wp-content/uploads/elementor/css/custom-widget-image-box.min.css?ver=1737378370' media='all' />
+<link rel='stylesheet' id='e-animation-zoomIn-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/lib/animations/styles/zoomIn.min.css?ver=3.26.4' media='all' />
+<link rel='stylesheet' id='widget-text-editor-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/css/widget-text-editor.min.css?ver=3.26.4' media='all' />
+<link rel='stylesheet' id='widget-icon-list-css' href='https://bessawebdesigner.com.br/wp-content/uploads/elementor/css/custom-widget-icon-list.min.css?ver=1737378370' media='all' />
+<link rel='stylesheet' id='widget-icon-box-css' href='https://bessawebdesigner.com.br/wp-content/uploads/elementor/css/custom-widget-icon-box.min.css?ver=1737378370' media='all' />
+<link rel='stylesheet' id='widget-nested-accordion-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/css/widget-nested-accordion.min.css?ver=3.26.4' media='all' />
+<link rel='stylesheet' id='elementor-post-980-css' href='https://bessawebdesigner.com.br/wp-content/uploads/elementor/css/post-980.css?ver=1737630539' media='all' />
+<link rel='stylesheet' id='google-fonts-1-css' href='https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto+Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=auto&#038;ver=6.7.1' media='all' />
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script src="https://bessawebdesigner.com.br/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/lib/font-awesome/js/v4-shims.min.js?ver=3.26.4" id="font-awesome-4-shim-js"></script>
+<link rel="https://api.w.org/" href="https://bessawebdesigner.com.br/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://bessawebdesigner.com.br/wp-json/wp/v2/pages/980" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://bessawebdesigner.com.br/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.7.1" />
+<link rel="canonical" href="https://bessawebdesigner.com.br/planner-equilibrio-produtivo/" />
+<link rel='shortlink' href='https://bessawebdesigner.com.br/?p=980' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://bessawebdesigner.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbessawebdesigner.com.br%2Fplanner-equilibrio-produtivo%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://bessawebdesigner.com.br/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fbessawebdesigner.com.br%2Fplanner-equilibrio-produtivo%2F&#038;format=xml" />
+<meta name="generator" content="Elementor 3.26.4; features: e_font_icon_svg, additional_custom_breakpoints, e_element_cache; settings: css_print_method-external, google_font-enabled, font_display-auto">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+			<link rel="icon" href="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/logo-icon-150x150.jpg" sizes="32x32" />
+<link rel="icon" href="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/logo-icon-300x300.jpg" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/logo-icon-300x300.jpg" />
+<meta name="msapplication-TileImage" content="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/logo-icon-300x300.jpg" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body class="page-template page-template-elementor_canvas page page-id-980 wp-embed-responsive elementor-default elementor-template-canvas elementor-kit-6 elementor-page elementor-page-980">
+			<div data-elementor-type="wp-page" data-elementor-id="980" class="elementor elementor-980" data-elementor-post-type="page">
+				<div class="elementor-element elementor-element-d996ec9 e-con-full e-flex e-con e-parent" data-id="d996ec9" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-eabbe14 elementor-widget elementor-widget-heading" data-id="eabbe14" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">2025 Produtivo: Turbine seu ano com preço especial de&nbsp;lançamento!</h2>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3f510d2 e-con-full e-flex e-con e-parent" data-id="3f510d2" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-04d4356 elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image" data-id="04d4356" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img fetchpriority="high" decoding="async" width="1920" height="1080" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-2-3.png.webp" class="attachment-full size-full wp-image-2414" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-2-3.png.webp 1920w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-2-3-300x169.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-2-3-1024x576.png.webp 1024w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-2-3-768x432.png.webp 768w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-2-3-1536x864.png.webp 1536w" sizes="(max-width: 1920px) 100vw, 1920px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-5e0e855 elementor-invisible elementor-widget elementor-widget-heading" data-id="5e0e855" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><span style="color: #000000">Comece 2025 com Controle Total</span> <span style="color: #71b56e"> <br> Diga Adeus à Procrastinação!</span></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-fccc5c8 elementor-invisible elementor-widget elementor-widget-heading" data-id="fccc5c8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Organize todas as áreas da sua vida em um só lugar em 2025 <strong><span style="color: #71b56e"> <br> Com uma ferramenta  digital, completa e minimalista é fácil de conquistar suas metas!</span></strong></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-dda0ee4 elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image" data-id="dda0ee4" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img decoding="async" width="3600" height="2400" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-1-1.png.webp" class="attachment-full size-full wp-image-2021" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-1-1.png.webp 3600w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-1-1-300x200.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-1-1-1024x683.png.webp 1024w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-1-1-768x512.png.webp 768w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-1-1-1536x1024.png.webp 1536w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-1-1-2048x1365.png.webp 2048w" sizes="(max-width: 3600px) 100vw, 3600px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-7700dce elementor-invisible elementor-widget elementor-widget-button" data-id="7700dce" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kiwify.com.br/IuuqzZD" id="meu-botao">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Quero Organizar Minha Vida Agora!</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-7f4fd74 e-con-full e-flex e-con e-parent" data-id="7f4fd74" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-b90a7c8 e-con-full e-flex elementor-invisible e-con e-child" data-id="b90a7c8" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+				<div class="elementor-element elementor-element-5f697cb elementor-widget elementor-widget-heading" data-id="5f697cb" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Você Nunca Usou o Notion? <br> Sem Problemas!</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-b283a7c elementor-widget elementor-widget-heading" data-id="b283a7c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Veja tudo o que vai aprender com o curso!</h2>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1dfd0bc e-con-full e-flex elementor-invisible e-con e-child" data-id="1dfd0bc" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+				<div class="elementor-element elementor-element-4a04db6 elementor-arrows-position-outside elementor-widget elementor-widget-image-carousel" data-id="4a04db6" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;4&quot;,&quot;slides_to_scroll&quot;:&quot;1&quot;,&quot;navigation&quot;:&quot;arrows&quot;,&quot;speed&quot;:1000,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:0,&quot;sizes&quot;:[]},&quot;image_spacing_custom_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:41,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:41,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:41,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:41,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:3,&quot;sizes&quot;:[]},&quot;infinite&quot;:&quot;yes&quot;}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="polite">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Sem-Titulo-1-1.jpg.webp" alt="Sem Título-1" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Sem-Titulo-2-1.jpg.webp" alt="Sem Título-2" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Sem-Titulo-3.jpg.webp" alt="Sem Título-3" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Sem-Titulo-4.jpg.webp" alt="Sem Título-4" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Sem-Titulo-5-2.jpg.webp" alt="Sem Título-5" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 de 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Sem-Titulo-6.jpg.webp" alt="Sem Título-6" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 de 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Sem-Titulo-7.jpg.webp" alt="Sem Título-7" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Sem-Titulo-8-1.jpg.webp" alt="Sem Título-8" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 9"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Sem-Titulo-9-1.jpg.webp" alt="Sem Título-9" /></figure></div>			</div>
+												<div class="elementor-swiper-button elementor-swiper-button-prev" role="button" tabindex="0">
+						<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-left" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M646 125C629 125 613 133 604 142L308 442C296 454 292 471 292 487 292 504 296 521 308 533L604 854C617 867 629 875 646 875 663 875 679 871 692 858 704 846 713 829 713 812 713 796 708 779 692 767L438 487 692 225C700 217 708 204 708 187 708 171 704 154 692 142 675 129 663 125 646 125Z"></path></svg>					</div>
+					<div class="elementor-swiper-button elementor-swiper-button-next" role="button" tabindex="0">
+						<svg aria-hidden="true" class="e-font-icon-svg e-eicon-chevron-right" viewBox="0 0 1000 1000" xmlns="http://www.w3.org/2000/svg"><path d="M696 533C708 521 713 504 713 487 713 471 708 454 696 446L400 146C388 133 375 125 354 125 338 125 325 129 313 142 300 154 292 171 292 187 292 204 296 221 308 233L563 492 304 771C292 783 288 800 288 817 288 833 296 850 308 863 321 871 338 875 354 875 371 875 388 867 400 854L696 533Z"></path></svg>					</div>
+				
+									</div>
+						</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-8455cad e-con-full e-flex e-con e-parent" data-id="8455cad" data-element_type="container">
+				<div class="elementor-element elementor-element-af8448b elementor-invisible elementor-widget elementor-widget-heading" data-id="af8448b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Equilíbrio Produtivo<span style="text-align: var(--text-align)"></span></h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-45bda65 e-grid e-con-boxed e-con e-child" data-id="45bda65" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-320a33b elementor-position-left elementor-position-left elementor-vertical-align-middle elementor-invisible elementor-widget elementor-widget-image-box" data-id="320a33b" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img decoding="async" width="400" height="400" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/system-regular-76-newspaper-hover-newspaper.gif" class="attachment-full size-full wp-image-1355" alt="" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Ferramentas práticas e poderosas</h3><p class="elementor-image-box-description">Converta suas metas em objetivos claros e alcançáveis com um template planejado para facilitar seu progresso. Com funções simples e eficientes, você terá tudo à mão para manter o foco.</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5d4426d elementor-position-left elementor-vertical-align-middle elementor-invisible elementor-widget elementor-widget-image-box" data-id="5d4426d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="400" height="400" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/system-regular-26-play-hover-play.gif" class="attachment-full size-full wp-image-1360" alt="" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Aulas que liberam sua criatividade</h3><p class="elementor-image-box-description">Acompanhe aulas exclusivas que ensinam como usar e personalizar seu template. Com poucos passos, transforme seu board em algo único e alinhado com seus planos pessoais.</p></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-4ce5577 elementor-position-left elementor-vertical-align-middle elementor-invisible elementor-widget elementor-widget-image-box" data-id="4ce5577" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="400" height="400" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/system-regular-44-folder-hover-folder.gif" class="attachment-full size-full wp-image-1361" alt="" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Sincronização automática e prática</h3><p class="elementor-image-box-description">Todas as edições e anotações são atualizadas em tempo real. Com sincronia em todos os dispositivos, você nunca perderá nenhum detalhe do seu progresso.</p></div></div>				</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-fecee7e e-flex e-con-boxed e-con e-parent" data-id="fecee7e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4f310ae elementor-widget elementor-widget-heading" data-id="4f310ae" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">O Equilíbrio Produtivo é para você que busca:</h2>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7aaadae e-grid e-con-boxed e-con e-parent" data-id="7aaadae" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-64853f4 e-con-full card e-flex elementor-invisible e-con e-child" data-id="64853f4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-261ca6c e-con-full inner e-flex e-con e-child" data-id="261ca6c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-927c373 elementor-position-top elementor-widget elementor-widget-image-box" data-id="927c373" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="728" height="373" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-1.png.webp" class="attachment-full size-full wp-image-1085" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-1.png.webp 728w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-1-300x154.png.webp 300w" sizes="(max-width: 728px) 100vw, 728px" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Equilíbrio Produtivo​</h3><p class="elementor-image-box-description">Conquiste uma vida mais equilibrada, maximizando sua produtividade sem sobrecarregar.​</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1d3ad1f e-con-full brilho e-flex e-con e-child" data-id="1d3ad1f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-2f194bf e-con-full brilho2 e-flex e-con e-child" data-id="2f194bf" data-element_type="container" data-settings="{&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-a103d6f e-con-full card e-flex elementor-invisible e-con e-child" data-id="a103d6f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-f575de9 e-con-full inner e-flex e-con e-child" data-id="f575de9" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-ee25e77 elementor-position-top elementor-widget elementor-widget-image-box" data-id="ee25e77" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="728" height="369" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-2.png.webp" class="attachment-full size-full wp-image-1090" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-2.png.webp 728w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-2-300x152.png.webp 300w" sizes="(max-width: 728px) 100vw, 728px" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Quadro dos Sonhos</h3><p class="elementor-image-box-description">Visualize seus objetivos e transforme-os em realidade.</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-92074b1 e-con-full brilho e-flex e-con e-child" data-id="92074b1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-a70215b e-con-full brilho2 e-flex e-con e-child" data-id="a70215b" data-element_type="container" data-settings="{&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-08f5c2e e-con-full card e-flex elementor-invisible e-con e-child" data-id="08f5c2e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-924d7a8 e-con-full inner e-flex e-con e-child" data-id="924d7a8" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-8e17a62 elementor-position-top elementor-widget elementor-widget-image-box" data-id="8e17a62" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="728" height="399" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-3.png.webp" class="attachment-full size-full wp-image-1091" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-3.png.webp 728w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-3-300x164.png.webp 300w" sizes="(max-width: 728px) 100vw, 728px" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title"><span style="font-size: 1.75rem;">Hábitos Atômicos</span></h3><p class="elementor-image-box-description">Desenvolva pequenos hábitos que geram grandes resultados.</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-0e73702 e-con-full brilho e-flex e-con e-child" data-id="0e73702" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-dc85c6b e-con-full brilho2 e-flex e-con e-child" data-id="dc85c6b" data-element_type="container" data-settings="{&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-2237c52 e-con-full card e-flex elementor-invisible e-con e-child" data-id="2237c52" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-3b7c72e e-con-full inner e-flex e-con e-child" data-id="3b7c72e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-95b1271 elementor-position-top elementor-widget elementor-widget-image-box" data-id="95b1271" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="1600" height="736" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-4.jpg.webp" class="attachment-full size-full wp-image-1092" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-4.jpg.webp 1600w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-4-300x138.jpg.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-4-1024x471.jpg.webp 1024w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-4-768x353.jpg.webp 768w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-4-1536x707.jpg.webp 1536w" sizes="(max-width: 1600px) 100vw, 1600px" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Gráfico de Produtividade</h3><p class="elementor-image-box-description">Visualize e acompanhe o aumento da sua produtividade.</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-78c7e7a e-con-full brilho e-flex e-con e-child" data-id="78c7e7a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-3c82b7a e-con-full brilho2 e-flex e-con e-child" data-id="3c82b7a" data-element_type="container" data-settings="{&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-0ecdd20 e-con-full card e-flex elementor-invisible e-con e-child" data-id="0ecdd20" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-528554d e-con-full inner e-flex e-con e-child" data-id="528554d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-d798431 elementor-position-top elementor-widget elementor-widget-image-box" data-id="d798431" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="728" height="368" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-5.png.webp" class="attachment-full size-full wp-image-1093" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-5.png.webp 728w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-5-300x152.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-5-585x295.png.webp 585w" sizes="(max-width: 728px) 100vw, 728px" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Plano de Ação</h3><p class="elementor-image-box-description">Defina suas metas e tome ação com clareza.</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-d495baa e-con-full brilho e-flex e-con e-child" data-id="d495baa" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-577bcaa e-con-full brilho2 e-flex e-con e-child" data-id="577bcaa" data-element_type="container" data-settings="{&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-1123a5a e-con-full card e-flex elementor-invisible e-con e-child" data-id="1123a5a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-c9cd364 e-con-full inner e-flex e-con e-child" data-id="c9cd364" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-64fe3b7 elementor-position-top elementor-widget elementor-widget-image-box" data-id="64fe3b7" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="728" height="354" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-6.png.webp" class="attachment-full size-full wp-image-1094" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-6.png.webp 728w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-6-300x146.png.webp 300w" sizes="(max-width: 728px) 100vw, 728px" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Listas de Cursos</h3><p class="elementor-image-box-description">Organize e acesse cursos relevantes para seu crescimento.</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-790a3ba e-con-full brilho e-flex e-con e-child" data-id="790a3ba" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-5b3d208 e-con-full brilho2 e-flex e-con e-child" data-id="5b3d208" data-element_type="container" data-settings="{&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-76b744a e-con-full card e-flex elementor-invisible e-con e-child" data-id="76b744a" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-3bb5626 e-con-full inner e-flex e-con e-child" data-id="3bb5626" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-87b4ab9 elementor-position-top elementor-widget elementor-widget-image-box" data-id="87b4ab9" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="728" height="359" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-7.png.webp" class="attachment-full size-full wp-image-1095" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-7.png.webp 728w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-7-300x148.png.webp 300w" sizes="(max-width: 728px) 100vw, 728px" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Lista de Leitura</h3><p class="elementor-image-box-description">Organize sua leitura para aprimorar seus conhecimentos.</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-57fb15d e-con-full brilho e-flex e-con e-child" data-id="57fb15d" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-4985013 e-con-full brilho2 e-flex e-con e-child" data-id="4985013" data-element_type="container" data-settings="{&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-8d77bf5 e-con-full card e-flex elementor-invisible e-con e-child" data-id="8d77bf5" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-aa4af09 e-con-full inner e-flex e-con e-child" data-id="aa4af09" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-94d30d6 elementor-position-top elementor-widget elementor-widget-image-box" data-id="94d30d6" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="728" height="352" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-8.png.webp" class="attachment-full size-full wp-image-1096" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-8.png.webp 728w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-8-300x145.png.webp 300w" sizes="(max-width: 728px) 100vw, 728px" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Planejamento Diário</h3><p class="elementor-image-box-description">Planeje suas tarefas e maximize seu tempo.</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-ff6c578 e-con-full brilho e-flex e-con e-child" data-id="ff6c578" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-187e40e e-con-full brilho2 e-flex e-con e-child" data-id="187e40e" data-element_type="container" data-settings="{&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-90d6740 e-con-full card e-flex elementor-invisible e-con e-child" data-id="90d6740" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;fadeIn&quot;}">
+		<div class="elementor-element elementor-element-9be1610 e-con-full inner e-flex e-con e-child" data-id="9be1610" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-d36777b elementor-position-top elementor-widget elementor-widget-image-box" data-id="d36777b" data-element_type="widget" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="728" height="356" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-9.png.webp" class="attachment-full size-full wp-image-1097" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-9.png.webp 728w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/print-9-300x147.png.webp 300w" sizes="(max-width: 728px) 100vw, 728px" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Ikigai</h3><p class="elementor-image-box-description">Conecte sua paixão, missão e profissão para o equilíbrio.</p></div></div>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-3cbd5ee e-con-full brilho e-flex e-con e-child" data-id="3cbd5ee" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+		<div class="elementor-element elementor-element-920610f e-con-full brilho2 e-flex e-con e-child" data-id="920610f" data-element_type="container" data-settings="{&quot;position&quot;:&quot;absolute&quot;}">
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-143f9d4 e-flex e-con-boxed e-con e-parent" data-id="143f9d4" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-f95264c elementor-widget-mobile__width-initial animated-fast elementor-invisible elementor-widget elementor-widget-button" data-id="f95264c" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeInUp&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kiwify.com.br/IuuqzZD" id="meu-botao">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Transforme sua produtividade agora mesmo!</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-c7b7d89 e-con-full e-flex e-con e-parent" data-id="c7b7d89" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-a2e10d8 elementor-widget elementor-widget-heading" data-id="a2e10d8" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Qual é o maior desafio para manter <br> a disciplina na sua rotina?</h2>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-733642c e-flex e-con-boxed e-con e-parent" data-id="733642c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-31852cd elementor-widget__width-initial elementor-absolute zoom-animation elementor-widget elementor-widget-image" data-id="31852cd" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="320" height="320" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp" class="attachment-full size-full wp-image-1769" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp 320w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-150x150.png.webp 150w" sizes="(max-width: 320px) 100vw, 320px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-e685b55 elementor-widget__width-initial elementor-absolute zoom-animation elementor-widget elementor-widget-image" data-id="e685b55" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="320" height="320" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp" class="attachment-full size-full wp-image-1769" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp 320w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-150x150.png.webp 150w" sizes="(max-width: 320px) 100vw, 320px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-f97f202 elementor-widget__width-initial elementor-absolute zoom-animation elementor-widget elementor-widget-image" data-id="f97f202" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="320" height="320" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp" class="attachment-full size-full wp-image-1769" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp 320w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-150x150.png.webp 150w" sizes="(max-width: 320px) 100vw, 320px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-749fe0a elementor-widget__width-initial elementor-absolute zoom-animation elementor-widget elementor-widget-image" data-id="749fe0a" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="320" height="320" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp" class="attachment-full size-full wp-image-1769" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp 320w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-150x150.png.webp 150w" sizes="(max-width: 320px) 100vw, 320px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-387684c elementor-widget__width-initial elementor-absolute zoom-animation elementor-widget elementor-widget-image" data-id="387684c" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="320" height="320" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp" class="attachment-full size-full wp-image-1769" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp 320w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-150x150.png.webp 150w" sizes="(max-width: 320px) 100vw, 320px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-9a2b335 elementor-widget__width-initial elementor-absolute zoom-animation elementor-widget elementor-widget-image" data-id="9a2b335" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="320" height="320" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp" class="attachment-full size-full wp-image-1769" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp 320w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-150x150.png.webp 150w" sizes="(max-width: 320px) 100vw, 320px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-f061868 elementor-widget__width-initial elementor-absolute zoom-animation elementor-widget elementor-widget-image" data-id="f061868" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="320" height="320" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp" class="attachment-full size-full wp-image-1769" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp 320w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-150x150.png.webp 150w" sizes="(max-width: 320px) 100vw, 320px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-8454f9a elementor-widget__width-initial elementor-absolute zoom-animation elementor-widget elementor-widget-image" data-id="8454f9a" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="320" height="320" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp" class="attachment-full size-full wp-image-1769" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15.png.webp 320w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/x-png-15-150x150.png.webp 150w" sizes="(max-width: 320px) 100vw, 320px" />															</div>
+				</div>
+		<div class="elementor-element elementor-element-db9146f e-flex e-con-boxed e-con e-child" data-id="db9146f" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-95924b5 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image-box" data-id="95924b5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="400" height="400" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/system-regular-29-cross-hover-cross-1.gif" class="attachment-full size-full wp-image-1377" alt="" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Falta de clareza nos objetivos​</h3></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-62477d5 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image-box" data-id="62477d5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:200}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="400" height="400" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/system-regular-29-cross-hover-cross-1.gif" class="attachment-full size-full wp-image-1377" alt="" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Falta de motivação</h3></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-8f73199 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image-box" data-id="8f73199" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:400}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="400" height="400" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/system-regular-29-cross-hover-cross-1.gif" class="attachment-full size-full wp-image-1377" alt="" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Gestão ineficiente do tempo</h3></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-109a3e8 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image-box" data-id="109a3e8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:600}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="400" height="400" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/system-regular-29-cross-hover-cross-1.gif" class="attachment-full size-full wp-image-1377" alt="" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Distrações constantes</h3></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e91f1e5 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image-box" data-id="e91f1e5" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:800}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="400" height="400" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/system-regular-29-cross-hover-cross-1.gif" class="attachment-full size-full wp-image-1377" alt="" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Medo do fracasso</h3></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-a700d6d elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image-box" data-id="a700d6d" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:1000}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="400" height="400" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/system-regular-29-cross-hover-cross-1.gif" class="attachment-full size-full wp-image-1377" alt="" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Falta de rotina estruturada</h3></div></div>				</div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-77da5e9 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image-box" data-id="77da5e9" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:1200}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="400" height="400" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/system-regular-29-cross-hover-cross-1.gif" class="attachment-full size-full wp-image-1377" alt="" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Fadiga mental e física</h3></div></div>				</div>
+				</div>
+				<div class="elementor-element elementor-element-5d2f659 elementor-position-left elementor-vertical-align-middle elementor-widget__width-initial elementor-invisible elementor-widget elementor-widget-image-box" data-id="5d2f659" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;zoomIn&quot;,&quot;_animation_delay&quot;:1400}" data-widget_type="image-box.default">
+				<div class="elementor-widget-container">
+					<div class="elementor-image-box-wrapper"><figure class="elementor-image-box-img"><img loading="lazy" decoding="async" width="400" height="400" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/system-regular-29-cross-hover-cross-1.gif" class="attachment-full size-full wp-image-1377" alt="" /></figure><div class="elementor-image-box-content"><h3 class="elementor-image-box-title">Perfeccionismo</h3></div></div>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-d670d57 e-con-full e-flex e-con e-parent" data-id="d670d57" data-element_type="container">
+		<div class="elementor-element elementor-element-5085122 e-flex e-con-boxed e-con e-child" data-id="5085122" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-e87fcd3 elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="e87fcd3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="250" height="242" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/pr.png.webp" class="attachment-full size-full wp-image-1371" alt="" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-369f50c elementor-widget elementor-widget-heading" data-id="369f50c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">@pctheonee</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2b9619a elementor-widget elementor-widget-text-editor" data-id="2b9619a" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="color: #333333;">&#8220;Desenvolver um ambiente onde eu conseguia me organizar e visualizar meu progresso diariamente foi o segredo para eu conseguir tirar meus planos do papel. Essa abordagem do template me ajudou muito a manter o foco e a motivação.&#8221;</span></p>								</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-125af82 e-con-full e-flex e-con e-parent" data-id="125af82" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-a864860 elementor-widget elementor-widget-heading" data-id="a864860" data-element_type="widget" data-settings="{&quot;motion_fx_motion_fx_scrolling&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_effect&quot;:&quot;yes&quot;,&quot;motion_fx_translateX_speed&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:4,&quot;sizes&quot;:[]},&quot;motion_fx_translateX_affectedRange&quot;:{&quot;unit&quot;:&quot;%&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:{&quot;start&quot;:0,&quot;end&quot;:100}},&quot;motion_fx_devices&quot;:[&quot;desktop&quot;,&quot;laptop&quot;,&quot;tablet_extra&quot;,&quot;tablet&quot;,&quot;mobile_extra&quot;,&quot;mobile&quot;]}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">• Preço especial • Comece hoje • Promoção exclusiva • Organize tudo • Adquira agora • Preço especial • Comece hoje • Promoção exclusiva • Organize tudo • Adquira agora • Preço especial • Comece hoje • Promoção exclusiva • Organize tudo • Adquira agora • Preço especial • Comece hoje • Promoção exclusiva • Organize tudo • Adquira agora</h2>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-95eb152 e-con-full e-flex e-con e-parent" data-id="95eb152" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-d952d32 elementor-invisible elementor-widget elementor-widget-heading" data-id="d952d32" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;fadeIn&quot;}" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><h2 class="elementor-heading-title elementor-size-default elementor-inline-editing pen" data-elementor-setting-key="title" data-pen-placeholder="Digite aqui...">Descubra como milhares de pessoas estão
+<span style="color: #71b56e"> <br>transformando</span> seu dia a dia com o Notion.</h2></h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-13aa2ee elementor-invisible elementor-widget elementor-widget-image-carousel" data-id="13aa2ee" data-element_type="widget" data-settings="{&quot;slides_to_show&quot;:&quot;4&quot;,&quot;slides_to_scroll&quot;:&quot;2&quot;,&quot;navigation&quot;:&quot;none&quot;,&quot;autoplay_speed&quot;:0,&quot;speed&quot;:6000,&quot;image_spacing_custom&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:30,&quot;sizes&quot;:[]},&quot;_animation&quot;:&quot;fadeIn&quot;,&quot;autoplay&quot;:&quot;yes&quot;,&quot;infinite&quot;:&quot;yes&quot;,&quot;image_spacing_custom_laptop&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_tablet&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile_extra&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]},&quot;image_spacing_custom_mobile&quot;:{&quot;unit&quot;:&quot;px&quot;,&quot;size&quot;:&quot;&quot;,&quot;sizes&quot;:[]}}" data-widget_type="image-carousel.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-image-carousel-wrapper swiper" role="region" aria-roledescription="carousel" aria-label="Carrossel de imagens" dir="ltr">
+			<div class="elementor-image-carousel swiper-wrapper" aria-live="off">
+								<div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="1 de 10"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/cinco.png.webp" alt="cinco" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="2 de 10"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dez.png.webp" alt="dez" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="3 de 10"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dois.png.webp" alt="dois" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="4 de 10"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/doze-e1737555830920.png.webp" alt="doze" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="5 de 10"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/nove.png.webp" alt="nove" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="6 de 10"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/oito.png.webp" alt="oito" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="7 de 10"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/printt-1.png.webp" alt="printt 1" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="8 de 10"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/quatro.png.webp" alt="quatro" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="9 de 10"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/seis.png.webp" alt="seis" /></figure></div><div class="swiper-slide" role="group" aria-roledescription="slide" aria-label="10 de 10"><figure class="swiper-slide-inner"><img decoding="async" class="swiper-slide-image" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/sete.png.webp" alt="sete" /></figure></div>			</div>
+							
+									</div>
+						</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-96c693d e-con-full e-flex elementor-invisible e-con e-parent" data-id="96c693d" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+				<div class="elementor-element elementor-element-d9365c9 elementor-widget elementor-widget-heading" data-id="d9365c9" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><span style="color: #000000">Transforme sua <span style="color: #71b56e"><strong>produtividade</strong></span> hoje</span></h2>				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-f9f9296 e-flex e-con-boxed elementor-invisible e-con e-parent" data-id="f9f9296" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-87d68e9 e-con-full e-flex e-con e-child" data-id="87d68e9" data-element_type="container">
+		<div class="elementor-element elementor-element-7fbf704 e-con-full card-colorido e-flex e-con e-child" data-id="7fbf704" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;animation_delay&quot;:200,&quot;animation_laptop&quot;:&quot;none&quot;}">
+		<div class="elementor-element elementor-element-fb548c1 e-con-full e-flex e-con e-child" data-id="fb548c1" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-ba243e3 elementor-widget elementor-widget-image" data-id="ba243e3" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="618" height="464" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/errado.png.webp" class="attachment-full size-full wp-image-1302" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/errado.png.webp 618w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/errado-300x225.png.webp 300w" sizes="(max-width: 618px) 100vw, 618px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-d4ec545 elementor-widget elementor-widget-heading" data-id="d4ec545" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Saia disso:</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-efaf360 elementor-align-left elementor-widget-mobile__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="efaf360" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-times" viewBox="0 0 352 512" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Desorganização</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-times" viewBox="0 0 352 512" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Procrastinação</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-times" viewBox="0 0 352 512" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Falta de foco</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-times" viewBox="0 0 352 512" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Metas esquecidas</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-times" viewBox="0 0 352 512" xmlns="http://www.w3.org/2000/svg"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-22.24-22.24c-12.28-12.28-32.19-12.28-44.48 0L176 189.28 75.93 89.21c-12.28-12.28-32.19-12.28-44.48 0L9.21 111.45c-12.28 12.28-12.28 32.19 0 44.48L109.28 256 9.21 356.07c-12.28 12.28-12.28 32.19 0 44.48l22.24 22.24c12.28 12.28 32.2 12.28 44.48 0L176 322.72l100.07 100.07c12.28 12.28 32.2 12.28 44.48 0l22.24-22.24c12.28-12.28 12.28-32.19 0-44.48L242.72 256z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Tempo perdido</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-79f4e20 e-con-full e-flex e-con e-child" data-id="79f4e20" data-element_type="container">
+		<div class="elementor-element elementor-element-3b82f46 e-con-full card-colorido1 e-flex e-con e-child" data-id="3b82f46" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;,&quot;animation&quot;:&quot;none&quot;,&quot;animation_laptop&quot;:&quot;none&quot;}">
+		<div class="elementor-element elementor-element-0de2963 e-con-full e-flex e-con e-child" data-id="0de2963" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-f569440 elementor-widget elementor-widget-image" data-id="f569440" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="618" height="464" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/certo.png.webp" class="attachment-full size-full wp-image-1333" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/certo.png.webp 618w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/certo-300x225.png.webp 300w" sizes="(max-width: 618px) 100vw, 618px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-59b2b34 elementor-widget elementor-widget-heading" data-id="59b2b34" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Pra isso:</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-f17dc8c elementor-align-left elementor-widget-mobile__width-initial elementor-icon-list--layout-traditional elementor-list-item-link-full_width elementor-widget elementor-widget-icon-list" data-id="f17dc8c" data-element_type="widget" data-widget_type="icon-list.default">
+				<div class="elementor-widget-container">
+							<ul class="elementor-icon-list-items">
+							<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Planejamento claro</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Ação constante</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Produtividade real</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Metas alcançadas</span>
+									</li>
+								<li class="elementor-icon-list-item">
+											<span class="elementor-icon-list-icon">
+							<svg aria-hidden="true" class="e-font-icon-svg e-fas-check" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M173.898 439.404l-166.4-166.4c-9.997-9.997-9.997-26.206 0-36.204l36.203-36.204c9.997-9.998 26.207-9.998 36.204 0L192 312.69 432.095 72.596c9.997-9.997 26.207-9.997 36.204 0l36.203 36.204c9.997 9.997 9.997 26.206 0 36.204l-294.4 294.401c-9.998 9.997-26.207 9.997-36.204-.001z"></path></svg>						</span>
+										<span class="elementor-icon-list-text">Mais equilíbrio</span>
+									</li>
+						</ul>
+						</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-b75318f e-flex e-con-boxed e-con e-parent" data-id="b75318f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-3cf07aa e-con-full e-flex elementor-invisible e-con e-child" data-id="3cf07aa" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;gradient&quot;,&quot;animation&quot;:&quot;zoomIn&quot;}">
+				<div class="elementor-element elementor-element-7ce0c62 elementor-widget elementor-widget-heading" data-id="7ce0c62" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Aumente sua produtividade e alcance um verdadeiro equilíbrio produtivo</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-9d51f24 elementor-widget-mobile__width-initial elementor-widget__width-initial elementor-widget elementor-widget-image" data-id="9d51f24" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="3600" height="2400" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos.png.webp" class="attachment-full size-full wp-image-991" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos.png.webp 3600w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-300x200.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-1024x683.png.webp 1024w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-768x512.png.webp 768w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-1536x1024.png.webp 1536w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/dispositivos-2048x1365.png.webp 2048w" sizes="(max-width: 3600px) 100vw, 3600px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-6b60e39 elementor-widget elementor-widget-heading" data-id="6b60e39" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">De R$ 77,90</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-2d7dab1 elementor-widget elementor-widget-heading" data-id="2d7dab1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">por apenas</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-a35b2c2 elementor-widget elementor-widget-heading" data-id="a35b2c2" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">12x5,81</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-e1507ad elementor-widget elementor-widget-heading" data-id="e1507ad" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><span style="letter-spacing: -0.1px;text-align: start">ou&nbsp;</span><span style="letter-spacing: -0.1px;text-align: start"><span style="font-weight: bolder">R$57,90&nbsp;</span></span><span style="letter-spacing: -0.1px;text-align: start">à vista</span></h2>				</div>
+				</div>
+		<div class="elementor-element elementor-element-3b518d5 e-grid e-con-boxed e-con e-child" data-id="3b518d5" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-620b3d2 elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="620b3d2" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
-</head>
-<body>
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon elementor-animation-">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-check-double" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M505 174.8l-39.6-39.6c-9.4-9.4-24.6-9.4-33.9 0L192 374.7 80.6 263.2c-9.4-9.4-24.6-9.4-33.9 0L7 302.9c-9.4 9.4-9.4 24.6 0 34L175 505c9.4 9.4 24.6 9.4 33.9 0l296-296.2c9.4-9.5 9.4-24.7.1-34zm-324.3 106c6.2 6.3 16.4 6.3 22.6 0l208-208.2c6.2-6.3 6.2-16.4 0-22.6L366.1 4.7c-6.2-6.3-16.4-6.3-22.6 0L192 156.2l-55.4-55.5c-6.2-6.3-16.4-6.3-22.6 0L68.7 146c-6.2 6.3-6.2 16.4 0 22.6l112 112.2z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
-  <!-- Cabeçalho -->
-  <div class="header">
-    <strong class="blacky">🔥 PROMOÇÃO POR TEMPO LIMITADO!   
-    </strong>
-  </div>
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Garantia <br> total						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-8da4154 elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="8da4154" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
-  <!-- Conteúdo principal -->
-  <section class="container">
-    <!-- Logotipo -->
-    <div class="logoyy">
-      <img src="logo-placeholder.png" alt="Logotipo Equilíbrio Produtivo">
-    </div>
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon elementor-animation-">
+				<svg aria-hidden="true" class="e-font-icon-svg e-far-clock" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M256 8C119 8 8 119 8 256s111 248 248 248 248-111 248-248S393 8 256 8zm0 448c-110.5 0-200-89.5-200-200S145.5 56 256 56s200 89.5 200 200-89.5 200-200 200zm61.8-104.4l-84.9-61.7c-3.1-2.3-4.9-5.9-4.9-9.7V116c0-6.6 5.4-12 12-12h32c6.6 0 12 5.4 12 12v141.7l66.8 48.6c5.4 3.9 6.5 11.4 2.6 16.8L334.6 349c-3.9 5.3-11.4 6.5-16.8 2.6z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
-    <!-- Título e subtítulo -->
-    <h1 class="title">Organize <span class="highlight">todas as áreas</span> da sua vida em um só lugar para 2025</h1>
-    <p class="subtitle">Com um equilíbrio produtivo digital, completo e minimalista <span class="highlight">é fácil de conquistar suas metas!</span></p>
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Acesso<br>imediato
+						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+				<div class="elementor-element elementor-element-46e94c5 elementor-position-left elementor-vertical-align-middle elementor-view-default elementor-mobile-position-top elementor-widget elementor-widget-icon-box" data-id="46e94c5" data-element_type="widget" data-widget_type="icon-box.default">
+				<div class="elementor-widget-container">
+							<div class="elementor-icon-box-wrapper">
 
-    <!-- Imagens dos dispositivos -->
-    <div class="devices">
-      <img src="device1-placeholder.png" alt="Dispositivo 1">
+						<div class="elementor-icon-box-icon">
+				<span  class="elementor-icon elementor-animation-">
+				<svg aria-hidden="true" class="e-font-icon-svg e-fas-shield-alt" viewBox="0 0 512 512" xmlns="http://www.w3.org/2000/svg"><path d="M466.5 83.7l-192-80a48.15 48.15 0 0 0-36.9 0l-192 80C27.7 91.1 16 108.6 16 128c0 198.5 114.5 335.7 221.5 380.3 11.8 4.9 25.1 4.9 36.9 0C360.1 472.6 496 349.3 496 128c0-19.4-11.7-36.9-29.5-44.3zM256.1 446.3l-.1-381 175.9 73.3c-3.3 151.4-82.1 261.1-175.8 307.7z"></path></svg>				</span>
+			</div>
+			
+						<div class="elementor-icon-box-content">
 
-    </div>
+									<h3 class="elementor-icon-box-title">
+						<span  >
+							Pagamento<br>seguro
+						</span>
+					</h3>
+				
+				
+			</div>
+			
+		</div>
+						</div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-bc001d8 elementor-align-center elementor-mobile-align-center elementor-widget elementor-widget-button" data-id="bc001d8" data-element_type="widget" data-settings="{&quot;_animation&quot;:&quot;none&quot;}" data-widget_type="button.default">
+				<div class="elementor-widget-container">
+									<div class="elementor-button-wrapper">
+					<a class="elementor-button elementor-button-link elementor-size-sm" href="https://pay.kiwify.com.br/IuuqzZD" id="meu-botao">
+						<span class="elementor-button-content-wrapper">
+									<span class="elementor-button-text">Quero aumentar minha produtividade</span>
+					</span>
+					</a>
+				</div>
+								</div>
+				</div>
+				<div class="elementor-element elementor-element-4b2ecb8 elementor-widget elementor-widget-image" data-id="4b2ecb8" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="400" height="36" src="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/metodos-200-1.png.webp" class="attachment-large size-large wp-image-1461" alt="" srcset="https://bessawebdesigner.com.br/wp-content/uploads/2025/01/metodos-200-1.png.webp 400w,   https://bessawebdesigner.com.br/wp-content/uploads/2025/01/metodos-200-1.png-300x27.webp 300w,   https://bessawebdesigner.com.br/wp-content/uploads/2025/01/metodos-200-1.png-396x36.webp 396w" sizes="(max-width: 400px) 100vw, 400px" />															</div>
+				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-c2971be e-flex e-con-boxed e-con e-parent" data-id="c2971be" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-ef18731 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="ef18731" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="512" height="512" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo.png.webp" class="attachment-full size-full wp-image-1581" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo.png.webp 512w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo-150x150.png.webp 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-d33c265 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="d33c265" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="512" height="512" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo.png.webp" class="attachment-full size-full wp-image-1581" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo.png.webp 512w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo-150x150.png.webp 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-b3d08bf elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="b3d08bf" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="512" height="512" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo.png.webp" class="attachment-full size-full wp-image-1581" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo.png.webp 512w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo-150x150.png.webp 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-1378853 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="1378853" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="512" height="512" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo.png.webp" class="attachment-full size-full wp-image-1581" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo.png.webp 512w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Notion_app_logo-150x150.png.webp 150w" sizes="(max-width: 512px) 100vw, 512px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-f4df4d1 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="f4df4d1" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="1080" height="1080" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3.png.webp" class="attachment-full size-full wp-image-2399" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3.png.webp 1080w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-1024x1024.png.webp 1024w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-150x150.png.webp 150w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-768x768.png.webp 768w" sizes="(max-width: 1080px) 100vw, 1080px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-09ce03b elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="09ce03b" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="1080" height="1080" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3.png.webp" class="attachment-full size-full wp-image-2399" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3.png.webp 1080w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-1024x1024.png.webp 1024w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-150x150.png.webp 150w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-768x768.png.webp 768w" sizes="(max-width: 1080px) 100vw, 1080px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-56f4786 elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="56f4786" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="1080" height="1080" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3.png.webp" class="attachment-full size-full wp-image-2399" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3.png.webp 1080w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-1024x1024.png.webp 1024w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-150x150.png.webp 150w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-768x768.png.webp 768w" sizes="(max-width: 1080px) 100vw, 1080px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-653e0ff elementor-widget__width-initial elementor-absolute elementor-widget elementor-widget-image" data-id="653e0ff" data-element_type="widget" data-settings="{&quot;_position&quot;:&quot;absolute&quot;}" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+															<img loading="lazy" decoding="async" width="1080" height="1080" src="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3.png.webp" class="attachment-full size-full wp-image-2399" alt="" srcset="https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3.png.webp 1080w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-300x300.png.webp 300w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-1024x1024.png.webp 1024w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-150x150.png.webp 150w,  https://bessawebdesigner.com.br/wp-content/webp-express/webp-images/uploads/2025/01/Equilibrio-Produtivo-3-768x768.png.webp 768w" sizes="(max-width: 1080px) 100vw, 1080px" />															</div>
+				</div>
+				<div class="elementor-element elementor-element-1bb13b1 elementor-widget elementor-widget-heading" data-id="1bb13b1" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">FAQ <br> Perguntas Frequentes </h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-3172391 elementor-widget elementor-widget-n-accordion" data-id="3172391" data-element_type="widget" data-settings="{&quot;default_state&quot;:&quot;all_collapsed&quot;,&quot;max_items_expended&quot;:&quot;one&quot;,&quot;n_accordion_animation_duration&quot;:{&quot;unit&quot;:&quot;ms&quot;,&quot;size&quot;:400,&quot;sizes&quot;:[]}}" data-widget_type="nested-accordion.default">
+				<div class="elementor-widget-container">
+							<div class="e-n-accordion" aria-label="Accordion. Open links with Enter or Space, close with Escape, and navigate with Arrow Keys">
+						<details id="e-n-accordion-item-5180" class="e-n-accordion-item" >
+				<summary class="e-n-accordion-item-title" data-accordion-index="1" tabindex="0" aria-expanded="false" aria-controls="e-n-accordion-item-5180" >
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Como é entregue o Equilíbrio Produtivo? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened' ><svg aria-hidden="true" class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
 
-    <!-- Botão de chamada para ação -->
-    <a href="https://pay.kiwify.com.br/IuuqzZD"><button class="button"> Preciso do Planner</button></a>
-    <!-- <h5 class="eqk">Equilíbrio Produtivo</h5> -->
-    <!-- <a href="#">Equilíbrio Produtivo</a> -->
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-5180" class="elementor-element elementor-element-3d5b1d0 e-con-full e-flex e-con e-child" data-id="3d5b1d0" data-element_type="container">
+				<div class="elementor-element elementor-element-f92992f elementor-widget elementor-widget-text-editor" data-id="f92992f" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="color: #333333;">Após a compra você poderá acessar a área de membros onde será disponibilizado as aulas e o link do template.</span></p>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-5181" class="e-n-accordion-item" >
+				<summary class="e-n-accordion-item-title" data-accordion-index="2" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-5181" >
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Onde ficará o template? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened' ><svg aria-hidden="true" class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
 
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-5181" class="elementor-element elementor-element-f399cbf e-con-full e-flex e-con e-child" data-id="f399cbf" data-element_type="container">
+				<div class="elementor-element elementor-element-4754b07 elementor-widget elementor-widget-text-editor" data-id="4754b07" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="color: #333333;">O template fica hospedado na sua conta do Notion, assim você terá todo domínio do template e poderá customizar como quiser.</span></p>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-5182" class="e-n-accordion-item" >
+				<summary class="e-n-accordion-item-title" data-accordion-index="3" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-5182" >
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Quanto tempo de acesso terei? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened' ><svg aria-hidden="true" class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-5182" class="elementor-element elementor-element-b2b532f e-con-full e-flex e-con e-child" data-id="b2b532f" data-element_type="container">
+				<div class="elementor-element elementor-element-75cd01e elementor-widget elementor-widget-text-editor" data-id="75cd01e" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="color: #333333;">Na compra do template: Equilíbrio Produtivo você garante acesso vitalício ao template e aulas, assim como futuras atualizações 100% gratuitas.</span></p>								</div>
+				</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-5183" class="e-n-accordion-item" >
+				<summary class="e-n-accordion-item-title" data-accordion-index="4" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-5183" >
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Nunca usei o Notion, é pra mim? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened' ><svg aria-hidden="true" class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-5183" class="elementor-element elementor-element-0f10a71 e-flex e-con-boxed e-con e-child" data-id="0f10a71" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-d356a81 elementor-widget elementor-widget-text-editor" data-id="d356a81" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="color: #333333;">Sim! O template é simples e prático, além do Notion ser grátis e super intuitivo, você terá acesso às aulas que o ensinarão a utilizar o template.</span></p>								</div>
+				</div>
+					</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-5184" class="e-n-accordion-item" >
+				<summary class="e-n-accordion-item-title" data-accordion-index="5" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-5184" >
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Posso usar o template em dispositivos diferentes? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened' ><svg aria-hidden="true" class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-5184" class="elementor-element elementor-element-4f99d62 e-flex e-con-boxed e-con e-child" data-id="4f99d62" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-363e4f9 elementor-widget elementor-widget-text-editor" data-id="363e4f9" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="color: #333333;">Sim! O Notion sincroniza automaticamente em todos os seus dispositivos, como celular, tablet e computador.</span></p>								</div>
+				</div>
+					</div>
+				</div>
+					</details>
+						<details id="e-n-accordion-item-5185" class="e-n-accordion-item" >
+				<summary class="e-n-accordion-item-title" data-accordion-index="6" tabindex="-1" aria-expanded="false" aria-controls="e-n-accordion-item-5185" >
+					<span class='e-n-accordion-item-title-header'><div class="e-n-accordion-item-title-text"> Quanto tempo terei acesso ao curso e ao template? </div></span>
+							<span class='e-n-accordion-item-title-icon'>
+			<span class='e-opened' ><svg aria-hidden="true" class="e-font-icon-svg e-fas-minus" viewBox="0 0 448 512" xmlns="http://www.w3.org/2000/svg"><path d="M416 208H32c-17.67 0-32 14.33-32 32v32c0 17.67 14.33 32 32 32h384c17.67 0 32-14.33 32-32v-32c0-17.67-14.33-32-32-32z"></path></svg></span>
+			<span class='e-closed'><svg aria-hidden="true" class="e-font-icon-svg e-fas-angle-right" viewBox="0 0 256 512" xmlns="http://www.w3.org/2000/svg"><path d="M224.3 273l-136 136c-9.4 9.4-24.6 9.4-33.9 0l-22.6-22.6c-9.4-9.4-9.4-24.6 0-33.9l96.4-96.4-96.4-96.4c-9.4-9.4-9.4-24.6 0-33.9L54.3 103c9.4-9.4 24.6-9.4 33.9 0l136 136c9.5 9.4 9.5 24.6.1 34z"></path></svg></span>
+		</span>
+
+						</summary>
+				<div role="region" aria-labelledby="e-n-accordion-item-5185" class="elementor-element elementor-element-b9aea6c e-flex e-con-boxed e-con e-child" data-id="b9aea6c" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-8d30186 elementor-widget elementor-widget-text-editor" data-id="8d30186" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+									<p><span style="color: #333333;">O acesso é vitalício, tanto ao curso quanto ao template, para você utilizar sempre que precisar.</span></p>								</div>
+				</div>
+					</div>
+				</div>
+					</details>
+					</div>
+						</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-4d9c65c e-flex e-con-boxed e-con e-parent" data-id="4d9c65c" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-8c147eb elementor-widget elementor-widget-html" data-id="8c147eb" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+					<script type="text/javascript">
     
-</section>
+      const cards = document.querySelectorAll(".card");
 
-<!-- PLANO DE ROTINAS -->
-<section class="section">
+window.addEventListener("mousemove", (ev) => {
+  
+  cards.forEach((e) => {
+    const brilho = e.querySelector(".brilho");
+    const brilho2 = e.querySelector(".brilho2");
+    const rec = brilho2.getBoundingClientRect();
 
-    <!-- Elemento Branco -->
-    <div class="white-section">
+  
+    brilho.animate(
+      [
+        {
+          transform: `translate(${
+            (ev.clientX - rec.left) - (rec.width / 2)
+          }px,${(ev.clientY - rec.top) - (rec.height / 2)}px)`
+        }
+      ],
+      {
+        duration: 300,
+        fill: "forwards"
+      }
+    );
+  
+    brilho.style.opacity = "1";
       
-    </div>
-
-    <!-- Elemento Azul -->
-    <div class="content">
-      <ul>
-        <li><img src="correto 1.png" alt="Check">Organize sua vida com simplicidade</li>
-        <li><img src="correto 1.png" alt="Check">Acompanhe seu progresso</li>
-        <li><img src="correto 1.png" alt="Check">Tire suas metas do papel</li>
-        <li><img src="correto 1.png" alt="Check">Desenvolva disciplina, foco e clareza</li>
-        <li><img src="correto 1.png" alt="Check">Planeje seus próximos passos</li>
-        <li><img src="correto 1.png" alt="Check">Diminua sua ansiedade</li>
-      </ul>
-    </div>
-
-    <!-- Imagem do Celular Sobreposta -->
-     <img src="device-placeholder.png"class="phone-image" alt="">
-    <!-- <img src="https://via.placeholder.com/220" alt="Celular" > -->
-  </section>
-
-</div>
-<div class="containerrs">
-    <!-- Logos dentro do container principal -->
-    <div class="random-logos">
-        <img src="Notion_app_logo-removebg-preview 2.png" alt="Notion Logo" class="notion-logo logo1">
-        <img src="Notion_app_logo-removebg-preview 6.png" alt="Notion Logo" class="notion-logo logo3">
-        <img src="Notion_app_logo-removebg-preview 1.png" alt="Notion Logo" class="notion-logo logo4">
-        <img src="Notion_app_logo-removebg-preview 4.png" alt="Notion Logo" class="notion-logo logo5">
-    </div>
-
-    <div class="contentxvs">
-        <div class="image-section">
-            <img src="AfterlightImagePNG 1.png" alt="Notion no Celular" class="phone-imagesd">
-        </div>
-        <div class="text-section">
-            <h1>Equilíbrio Produtivo</h1>
-            <p>Um template do Notion totalmente personalizável contendo ferramentas poderosas para transformar suas metas em objetivos.</p>
-            <p>O template acompanha aulas para te ensinar a utilizar e personalizar seu board conforme seus objetivos e imaginação.</p>
-            <p>Todas as alterações e anotações são sincronizadas em tempo real em todos os dispositivos conectados.</p>
-        </div>
-    </div>
-</div>
-
-<section class="blue-section">
-    <div class="containesar">
-      <!-- Título da Seção no Topo -->
-      <h2 class="section-title">O Equilíbrio Produtivo <span class="greeyn">é para você que busca:</span></h2>
+  });
   
-      <!-- Primeiro Bloco: Imagem à Esquerda, Texto à Direita -->
-      <div class="content-item">
-        <div class="image-container">
-          <img src="image (1) (1) 1.png" alt="Imagem 1" class="image">
-        </div>
-        <div class="text-container">
-          <h3>Um lugar centralizado <br> para se <span class="greeyn">organizar</span></h3>
-        </div>
-      </div>
-  
-      <!-- Segundo Bloco: Imagem à Direita, Texto à Esquerda -->
-      <div class="content-item reverse">
-        <div class="image-container">
-            <img src="image (4).png" alt="Imagem 2" class="image">
-          </div>
-        <div class="text-container">
-          <h3>Visualizar seus <span class="greeyn">objetivos</span> <br> e <span class="greeyn">sonhos</span></h3>
-        </div>
-        
-      </div>
-  
-      <!-- Terceiro Bloco: Imagem à Esquerda, Texto à Direita -->
-      <div class="content-item">
-        <div class="image-container">
-          <img src="habitos 2.png" alt="Imagem 3" class="image">
-        </div>
-        <div class="text-container">
-          <h3>Acompanhar seu <span class="greeyn">progresso</span> <br>
-            diariamente</h3>
-        </div>
-      </div>
-
-      <div class="desktop">
-      <!-- Quarto Bloco: Imagem à Esquerda, Texto à Direita -->
-      <div class="content-item">
-        <div class="text-container">
-          <h3><span class="greeyn">Monitore sua </span> produtividade<br>
-            </h3>
-        </div>
-        <div class="image-container">
-            <img src="sdsdsd.jpg" alt="Imagem 3" class="image">
-          </div>
-      </div>
-    </div>
-      <!--mobile-->
-
-      <div class="content-itemaa">
-        <div class="content-item">
-        <div class="image-container">
-            <img src="sdsdsd.jpg" alt="Imagem 3" class="image">
-          </div>
-          <div class="text-container">
-            <h3><span class="greeyn">Monitore</span> sua produtividade <br></h3>
-          </div>
-      </div>
-    </div>
-
-      <!--mobile-->
-
-      <!-- Quinto Bloco: Imagem à Esquerda, Texto à Direita -->
-      <div class="content-item">
-        <div class="image-container">
-          <img src="image (9) (2).png" alt="Imagem 3" class="image">
-        </div>
-        <div class="text-container">
-          <h3>Traçar seu <span class="greeyn">plano de ação</span> </h3>
-        </div>
-      </div>
-
-      <div class="desktop">
-      <!-- Sexto Bloco: Imagem à Esquerda, Texto à Direita -->
-      <div class="content-item">
-        
-        <div class="text-container">
-          <h3>Acompanhar seu <span class="greeyn">progresso</span>  <br>
-            em cursos</h3>
-        </div>
-        <div class="image-container">
-            <img src="image (7).png" alt="Imagem 3" class="image">
-          </div>
-      </div>
-    </div>
-
-      <!--mobile-->
-
-      <div class="content-itemaa">
-        <div class="content-item">
-        <div class="image-container">
-          <img src="image (7).png" alt="Imagem 3" class="image">
-        </div>
-          <div class="text-container">
-            <h3>Acompanhar seu <span class="greeyn">progresso</span>  <br>
-              em cursos</h3>
-          </div>
-      </div>
-    </div>
-
-      <!--mobile-->
-
-      <!-- Setimo Bloco: Imagem à Esquerda, Texto à Direita -->
-      <div class="content-item">
-        <div class="image-container">
-            <img src="image (8).png" alt="Imagem 3" class="image">
-          </div>
-        <div class="text-container">
-          <h3>Acompanhar seu <span class="greeyn">progresso</span> <br>
-            em livros</h3> 
-        </div>
-      </div>
+});
 
     
-      <div class="desktop">
-      <!-- Oitavo Bloco: Imagem à Esquerda, Texto à Direita -->
-      <div class="content-item">
-        
-        <div class="text-container">
-          <h3>Planejamento <span class="greeyn">dos seus dias e meses</span></h3>
-        </div>
-        <div class="image-container">
-            <img src="image (6).png" alt="Imagem 3" class="image">
-          </div>
-      </div>
-    </div>
-
-    <!--mobile-->
-
-    <div class="content-itemaa">
-      <div class="content-item">
-      <div class="image-container">
-        <img src="image (6).png" alt="3" class="image">
-      </div>
-      <div class="text-container">
-        <h3>Planejamento <span class="greeyn">dos seus dias e meses</span></h3>
-      </div>
-    </div>
-  </div>
-
-
-  <div class="desktop">
-    <!-- Setimo Bloco: Imagem à Esquerda, Texto à Direita -->
-    <div class="content-item">
-      <div class="image-container">
-          <img src="image (2) (1).png" alt="Imagem 3" class="image">
-        </div>
-      <div class="text-container">
-        <h3>Buscar seu <span class="greeyn">Ikigai</span></h3>
-         
-          <p> <span class="greeyn">(módulo extra para buscar seu propósito)</span></p>
-      </div>
-    <!-- </div> -->
-    </div>
-    <!--mobile-->
-
-      <!--mobile-->
-
-      <div class="content-itemaa">
-        <div class="content-item">
-        <div class="image-container">
-          <img src="image (2) (1).png" alt="Imagem 3" class="image">
-        </div>
-          <div class="text-container">
-            <h3>Buscar seu <span class="greeyn">Ikigai</span></h3>
-            <p> <span class="greeyn">(módulo extra para buscar seu propósito)</span></p>
-          </div>
-      </div>
-    </div>
-
-  </div>
-
     
-        
-        
-
-        
-
-        
-        
-  </section>
-
-<header class="dadad">   </header>
-  <section class="containersectioa">
-    <h1 class="titlee">
-      Qual sua maior dificuldade em manter a <span class="greeyn">disciplina na rotina</span>?
-    </h1>
-    <div class="contentasa">
-      <div class="problem">
-        <img src="excluir 1.png" alt="X" class="x-icon">
-        <p class="problem-text">Falta de Clareza nos Objetivos</p>
-      </div>
-      <div class="problem">
-        <img src="excluir 1.png" alt="X" class="x-icon">
-        <p class="problem-text">Perfeccionismo</p>
-      </div>
-      <div class="problem">
-        <img src="excluir 1.png" alt="X" class="x-icon">
-        <p class="problem-text">Falta de Motivação</p>
-      </div>
-      <div class="problem">
-        <img src="excluir 1.png" alt="X" class="x-icon">
-        <p class="problem-text">Gestão Ineficiente do Tempo</p>
-      </div>
-      <div class="problem">
-        <img src="excluir 1.png" alt="X" class="x-icon">
-        <p class="problem-text">Distrações Constantes</p>
-      </div>
-      <div class="problem">
-        <img src="excluir 1.png" alt="X" class="x-icon">
-        <p class="problem-text">Fadiga Mental e Física</p>
-      </div>
-      <div class="problem">
-        <img src="excluir 1.png" alt="X" class="x-icon">
-        <p class="problem-text">Medo do Fracasso</p>
-      </div>
-      <div class="problem">
-        <img src="excluir 1.png" alt="X" class="x-icon">
-        <p class="problem-text">Falta de Rotina Estruturada</p>
-      </div>
-    </div>
-    <div class="background-icons">
-      <img src="excluir 12.png" alt="X-claro" class="x-light x-light-top-left">
-      <img src="excluir 12.png" alt="X-claro" class="x-light x-light-top-right">
-      <img src="excluir 12.png" alt="X-claro" class="x-light x-light-bottom-left">
-      <img src="excluir 12.png" alt="X-claro" class="x-light x-light-bottom-right">
-    </div>
-  </section>
-
-  <!-- <header class="dadad"></header> -->
-
-  <section class="section-feedback">
-    <div class="feedback-container">
-        <img src="pr.png" alt="Guilherme Pessoa" class="feedback-image">
-        <p class="feedback-text">"Desenvolver um ambiente onde eu conseguia me organizar e visualizar meu progresso diariamente foi o segredo para eu conseguir tirar meus planos do papel. Essa abordagem do template me ajudou muito a manter o foco e a motivação."</p>
-        <span class="feedback-author">- Guilherme Pessoa</span>
-    </div>
-</section>
-
-<div class="eqlprod"><img src="logo-placeholder.png" alt=""></div>
-
-
-<!-- <section class="section-comparison">
-  <h2>
-    <span style="margin-right: 215px;">Saia disso:  </span>
-    <span>Para isso:  </span>
-  </h2>
-    <div class="comparison-wrapper">
-        <div class="comparison-box">
-            <img src="IMG_8887.JPG" alt="Mesa desorganizada">
-            <ul>
-                <li class="item-negative"><span>&#10060;</span>Muitas tarefas pendentes</li>
-                <li class="item-negative"><span>&#10060;</span>Não saber por onde começar</li>
-                <li class="item-negative"><span>&#10060;</span>Frustração</li>
-                <li class="item-negative"><span>&#10060;</span>Bagunça mental</li>
-            </ul>
-        </div>
-        
-        <div class="comparison-box">
-
-            <img src="WhatsApp Image 2024-12-07 at 19.46.02 1.png" alt="Mesa organizada">
-            <ul>
-                <li class="item-positive"><span>&#9989;</span>Vitórias diárias</li>
-                <li class="item-positive"><span>&#9989;</span>Vida organizada em um lugar só</li>
-                <li class="item-positive"><span>&#9989;</span>Foco em execução</li>
-                <li class="item-positive"><span>&#9989;</span>Clareza mental</li>
-            </ul>
-        </div>
-    </div>
-</section> -->
-
-
-<section class="section-comparison">
-  
-    <div class="comparison-wrapper">
-      <div class="comparison-box">
-          <h2>
-            Saia disso:
-          </h2>
-            <img src="IMG_8887.JPG" alt="Mesa desorganizada">
-            <ul>
-                <li class="item-negative"><span>&#10060;</span>Muitas tarefas pendentes</li>
-                <li class="item-negative"><span>&#10060;</span>Não saber por onde começar</li>
-                <li class="item-negative"><span>&#10060;</span>Frustração</li>
-                <li class="item-negative"><span>&#10060;</span>Bagunça mental</li>
-            </ul>
-        </div>
-        <!-- <span class="xis">X</span> -->
-        
-        <div class="comparison-box">
-          <h2>
-            Para isso:
-          </h2>
-
-            <img src="WhatsApp Image 2024-12-07 at 19.46.02 1.png" alt="Mesa organizada">
-            <ul>
-                <li class="item-positive"><span>&#9989;</span>Vitórias diárias</li>
-                <li class="item-positive"><span>&#9989;</span>Vida organizada em um lugar só</li>
-                <li class="item-positive"><span>&#9989;</span>Foco em execução</li>
-                <li class="item-positive"><span>&#9989;</span>Clareza mental</li>
-            </ul>
-        </div>
-    </div>
-</section>
-
-
-<section class="containersaza">
-    <header>
-      <h1>Você vai ter mais produtividade <br>no seu <strong>Equilíbrio Produtivo</strong></h1>
-    </header>
-    <div class="contentza">
-      <img src="banner horizontal notion 2.png" alt="Dispositivos com templates Notion" class="devices">
-      <p class="preco-container">
-        <span class="preco-antigo">De R$ 77,90</span>
-        <br>
-        <span class="preco-atual">Por R$ 57,90</span>
-      </p>
-      
-      <a href="https://pay.kiwify.com.br/IuuqzZD"><button class="button"> Preciso do Planner</button></a>
-      <footer>
-        <p>Compra 100% segura pela KIWIFY.</p>
-      </footer>
-    </div>
-  </section>
-  
-
-  <section class="testimonial-section">
-    <h2>Veja quantas pessoas usam <br>o <span class="notionas">Notion</span> no dia a dia:</h2>
-    
-    <div class="depoimentos-sec-container-xy12">
-      <!-- Wrapper dos Depoimentos -->
-      <div class="depoimentos-flex-wrapper-xy12" id="depoimentos-wrapper-xy12">
-          <!-- Depoimentos 1 a 12 -->
-          <div class="depoimento-item-xy12"><img src="um.PNG" alt="Depoimento 1"></div>
-          <div class="depoimento-item-xy12"><img src="dois.PNG" alt="Depoimento 2"></div>
-          <div class="depoimento-item-xy12"><img src="tres.PNG" alt="Depoimento 3"></div>
-          <div class="depoimento-item-xy12"><img src="quatro.PNG" alt="Depoimento 4"></div>
-          <div class="depoimento-item-xy12"><img src="cinco.PNG" alt="Depoimento 5"></div>
-          <div class="depoimento-item-xy12"><img src="seis.PNG" alt="Depoimento 6"></div>
-          <div class="depoimento-item-xy12"><img src="sete.PNG" alt="Depoimento 7"></div>
-          <div class="depoimento-item-xy12"><img src="oito.PNG" alt="Depoimento 8"></div>
-          <div class="depoimento-item-xy12"><img src="nove.PNG" alt="Depoimento 9"></div>
-          <div class="depoimento-item-xy12"><img src="dez.PNG" alt="Depoimento 10"></div>
-          <div class="depoimento-item-xy12"><img src="onze.PNG" alt="Depoimento 11"></div>
-          <div class="depoimento-item-xy12"><img src="doze.PNG" alt="Depoimento 12"></div>
-      </div>
-  </div>
-    
-    
-    
-    <p class="sasp">Elas assumiram o controle da vida delas e dos resultados que querem alcançar</p>
-  </section>
-
-  <div class="faq-section">
-    <div class="faq-title-section">Perguntas Frequentes:</div>
-  
-    <div class="faq-item">
-      <div class="faq-title">
-        <span>Como é entregue o Equilíbrio Produtivo?</span>
-        <!-- <span class="icon">+</span> -->
-      </div>
-      <div class="faq-content">
-        Após a compra você poderá acessar a área de membros onde será disponibilizado as aulas e o link do template.
-      </div>
-    </div>
-  
-    <div class="faq-item">
-      <div class="faq-title">
-        <span>Onde ficará o template?</span>
-        <!-- <span class="icon">+</span> -->
-      </div>
-      <div class="faq-content">
-        O template fica hospedado na sua conta do Notion, assim você terá todo domínio do template e poderá customizar como quiser.      </div>
-    </div>
-  
-    <div class="faq-item">
-      <div class="faq-title">
-        <span>Quanto tempo de acesso terei?</span>
-        <!-- <span class="icon">+</span> -->
-      </div>
-      <div class="faq-content">
-        Na compra do template: Equilíbrio Produtivo você garante acesso vitalício ao template e aulas, assim como futuras atualizações 100% gratuitas.      </div>
-    </div>
-    <div class="faq-item">
-      <div class="faq-title">
-        <span>Nunca usei o Notion, é pra mim?</span>
-        <!-- <span class="icon">+</span> -->
-      </div>
-      <div class="faq-content">
-        Sim! O template é simples e prático, além do Notion ser grátis e super intuitivo, você terá acesso às aulas que ensinam a utilizar o template.    </div>
-  </div>
-  </div>
-
-
-    
-  
-
-  
-
-  <footer class="custom-footer">
-    <!-- Container verde -->
-    <div class="green-container">
-      <div class="green-content">
-        <p class="sasp">Siga-nos no Instagram:</p>
-        <a href="https://www.instagram.com/pctheonee/">
-          <img src="instagram.png" alt="Instagram" class="icon-instagram">
-        </a>
-       
-    </div>
-  
-    <!-- Container branco -->
-    <div class="white-container">
-      <div class="link-section">
-        <ul>
-          <li><a href="#">Política de Privacidade</a></li>
-          <li><a href="#">Termos de Uso</a></li>
-          <li><a href="#">Suporte ao Cliente</a></li>
-          <li><a href="#">Contato</a></li>
-        </ul>
-      </div>
-      <p class="copyright">&copy;2025 - Todos os direitos reservados <a  class="nextiy" href="https://nextiy.com.br/">Nextiy</a></p>
-    </div>
-  </footer>
-
-  <script src="script.js"></script>
-</body>
+</script>				</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7dbb07e e-con-full e-flex e-con e-parent" data-id="7dbb07e" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+		<div class="elementor-element elementor-element-ffaffcf e-con-full e-flex e-con e-child" data-id="ffaffcf" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-8a00f1c elementor-widget elementor-widget-heading" data-id="8a00f1c" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default">Planner Equilibrio Produtivo - Copyright ® 2025 - Todos os Direitos Reservados.</h2>				</div>
+				</div>
+				<div class="elementor-element elementor-element-9ade4f4 elementor-widget elementor-widget-heading" data-id="9ade4f4" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+					<h2 class="elementor-heading-title elementor-size-default"><a href="https://www.instagram.com/bessa.webdesigner/"><em><u>desenvolvido por bessawebdesigner</u></em></a></h2>				</div>
+				</div>
+				</div>
+				</div>
+				</div>
+					<script type='text/javascript'>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='e-motion-fx-css' href='https://bessawebdesigner.com.br/wp-content/plugins/elementor-pro/assets/css/modules/motion-fx.min.css?ver=3.25.3' media='all' />
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/ht-mega-for-elementor/assets/js/popper.min.js?ver=2.7.8" id="htmega-popper-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/ht-mega-for-elementor/assets/js/htbbootstrap.js?ver=2.7.8" id="htbbootstrap-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/ht-mega-for-elementor/assets/js/waypoints.js?ver=2.7.8" id="waypoints-js"></script>
+<script id="htmega-widgets-scripts-js-extra">
+var HTMEGAF = {"elementorpro":"1","buttion_area_text_next":"Next","buttion_area_text_prev":"Previous"};
+</script>
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/ht-mega-for-elementor/assets/js/htmega-widgets-active.js?ver=2.7.8" id="htmega-widgets-scripts-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.2.1" id="hello-theme-frontend-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/mousewheel-smooth-scroll/js/lenis.min.js?ver=1.1.19" id="lenis-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-content/uploads/wpmss/lenis-init.min.js?ver=1736818218" id="lenis-init-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.25.3" id="elementor-pro-webpack-runtime-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.26.4" id="elementor-webpack-runtime-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.26.4" id="elementor-frontend-modules-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-includes/js/dist/hooks.min.js?ver=4d63a3d491d11ffd8ac6" id="wp-hooks-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-includes/js/dist/i18n.min.js?ver=5e580eb46a90c2b997e6" id="wp-i18n-js"></script>
+<script id="wp-i18n-js-after">
+wp.i18n.setLocaleData( { 'text direction\u0004ltr': [ 'ltr' ] } );
+</script>
+<script id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/bessawebdesigner.com.br\/wp-admin\/admin-ajax.php","nonce":"3de924b3a5","urls":{"assets":"https:\/\/bessawebdesigner.com.br\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/bessawebdesigner.com.br\/wp-json\/"},"settings":{"lazy_load_background_images":true},"popup":{"hasPopUps":false},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"},"x-twitter":{"title":"X"},"threads":{"title":"Threads"}},"facebook_sdk":{"lang":"pt_BR","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/bessawebdesigner.com.br\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.25.3" id="elementor-pro-frontend-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-includes/js/jquery/ui/core.min.js?ver=1.13.3" id="jquery-ui-core-js"></script>
+<script id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Compartilhar no Facebook","shareOnTwitter":"Compartilhar no Twitter","pinIt":"Fixar","download":"Baixar","downloadImage":"Baixar imagem","fullscreen":"Tela cheia","zoom":"Zoom","share":"Compartilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Pr\u00f3ximo","close":"Fechar","a11yCarouselPrevSlideMessage":"Slide anterior","a11yCarouselNextSlideMessage":"Pr\u00f3ximo slide","a11yCarouselFirstSlideMessage":"Este \u00e9 o primeiro slide","a11yCarouselLastSlideMessage":"Este \u00e9 o \u00faltimo slide","a11yCarouselPaginationBulletMessage":"Ir para o slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Dispositivos m\u00f3veis no modo retrato","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Dispositivos m\u00f3veis no modo paisagem","value":880,"default_value":880,"direction":"max","is_enabled":true},"tablet":{"label":"Tablet no modo retrato","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet no modo paisagem","value":1200,"default_value":1200,"direction":"max","is_enabled":true},"laptop":{"label":"Notebook","value":1366,"default_value":1366,"direction":"max","is_enabled":true},"widescreen":{"label":"Tela ampla (widescreen)","value":2400,"default_value":2400,"direction":"min","is_enabled":false}},"hasCustomBreakpoints":true},"version":"3.26.4","is_static":false,"experimentalFeatures":{"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_onboarding":true,"e_css_smooth_scroll":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"home_screen":true,"nested-elements":true,"editor_v2":true,"e_element_cache":true,"link-in-bio":true,"floating-buttons":true,"launchpad-checklist":true},"urls":{"assets":"https:\/\/bessawebdesigner.com.br\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/bessawebdesigner.com.br\/wp-admin\/admin-ajax.php","uploadUrl":"https:\/\/bessawebdesigner.com.br\/wp-content\/uploads"},"nonces":{"floatingButtonsClickTracking":"3f8b705a0e"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"active_breakpoints":["viewport_mobile","viewport_mobile_extra","viewport_tablet","viewport_tablet_extra","viewport_laptop"],"viewport_tablet_extra":1200,"viewport_laptop":1366,"viewport_tablet":1024,"viewport_mobile_extra":880,"viewport_mobile":767,"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"title","hello_footer_logo_type":"logo"},"post":{"id":980,"title":"Planner%20Equilibrio%20Produtivo%20%E2%80%93%20BessaWebdesigner","excerpt":"","featuredImage":false}};
+</script>
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.26.4" id="elementor-frontend-js"></script>
+<script src="https://bessawebdesigner.com.br/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.25.3" id="pro-elements-handlers-js"></script>
+	</body>
 </html>
+
+<!-- Page cached by LiteSpeed Cache 6.5.4 on 2025-01-24 01:08:33 -->
